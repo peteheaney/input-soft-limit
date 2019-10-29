@@ -36,12 +36,12 @@ inputSoftLimitInstance.init();
 Add the necessary classes and data attributes to your HTML:
 
 ```html
-<label for="name">Name</label>
 <input type="text"
        class="input-soft-limit"
        id="name"
        data-input-soft-limit="10"
        data-input-soft-limit-counter=".name-count">
+       
 <p>Characters remaining: <span class="name-count"></span></p>
 ```
 

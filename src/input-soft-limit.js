@@ -5,12 +5,13 @@ class InputSoftLimit {
 
         // Merge default settings with passed settings
         self.settings = Object.assign({
-            inputs: {},
+            parent: document,
+            inputsSelector: '',
             submitButton: null,
             inputInvalidClass: 'is-invalid'
         }, settings);
 
-        self.elems = [...self.settings.inputs];
+        self.elems = [...self.settings.parent.querySelectorAll(self.settings.inputsSelector)];
     }
 
     init() {
@@ -26,11 +27,18 @@ class InputSoftLimit {
             // Get the inputs limit
             let limit = elem.getAttribute('data-input-soft-limit');
 
+            // If the input has no data-input-soft-limit attribute, bail out
+            if (!limit) {
+                return;
+            }
+
             // Get the element where we'll display the remaining characters
             let counter = document.querySelector(elem.getAttribute('data-input-soft-limit-counter'));
 
             // Populate the counter element with the limit value
-            counter.innerHTML = limit;
+            if (counter) {
+                counter.innerHTML = limit;
+            }
 
             // Set the input's status to 'valid'
             elem.setAttribute('data-input-soft-limit-status', 'valid');
@@ -44,7 +52,9 @@ class InputSoftLimit {
                 let remaining = limit - chars;
 
                 // Show the remaining number of characters
-                counter.innerHTML = remaining;
+                if (counter) {
+                    counter.innerHTML = remaining;
+                }
 
                 // If there are no remaining characters...
                 if (remaining < 0) {
@@ -72,6 +82,7 @@ class InputSoftLimit {
 
     checkAll() {
         let self = this;
+        let submitButton = self.settings.parent.querySelector(self.settings.submitButton);
 
         // Filter the inputs to check if any are invalid
         let invalidInputs = self.elems.filter(elem => {
@@ -81,11 +92,11 @@ class InputSoftLimit {
         // If there are invalid inputs...
         if (invalidInputs.length < 1) {
             // Disable the submit button
-            self.settings.submitButton.disabled = false;
+            submitButton.disabled = false;
         }
         else {
             // Enable the submit button
-            self.settings.submitButton.disabled = true;
+            submitButton.disabled = true;
         }
     }
 };

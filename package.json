@@ -1,7 +1,7 @@
 {
   "name": "input-soft-limit",
-  "version": "1.1.2",
-  "description": "",
+  "version": "1.2.0",
+  "description": "A simple JavaScript module that applies a soft character limit to inputs and textareas.",
   "main": "dist/input-soft-limit.js",
   "scripts": {
     "dev": "webpack -d --mode development",
@@ -11,6 +11,14 @@
     "type": "git",
     "url": "git+https://github.com/peteheaney/input-soft-limit.git"
   },
+  "keywords": [
+    "character",
+    "limit",
+    "max",
+    "soft",
+    "input",
+    "form"
+  ],
   "author": {
     "name": "Pete Heaney",
     "url": "https://peteheaney.com/"

@@ -22,8 +22,7 @@ Instantiate it, passing in some [settings](#settings):
 
 ```javascript
 const inputSoftLimitInstance = new InputSoftLimit({
-  inputs: document.querySelectorAll('.input-soft-limit'),
-  submitButton: document.querySelector('.data-submit'),
+  submitButton: '.submit',
   inputInvalidClass: 'is-invalid'
 });
 ```

@@ -9,14 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/peteheaney/typemate.git"
+    "url": "git+https://github.com/peteheaney/input-soft-limit.git"
   },
-  "author": "hankchizljaw",
+  "author": {
+    "name": "Pete Heaney",
+    "url": "https://peteheaney.com/"
+  },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hankchizljaw/typemate/issues"
+    "url": "https://github.com/peteheaney/input-soft-limit/issues"
   },
-  "homepage": "https://github.com/hankchizljaw/typemate#readme",
+  "homepage": "https://github.com/peteheaney/input-soft-limit#readme",
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.6.2",

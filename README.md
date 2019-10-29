@@ -1,10 +1,10 @@
-#Input Soft Limit
+# Input Soft Limit
 
 A simple JavaScript module that applies a soft character limit to inputs and textareas.
 
 Input Soft Limit can be applied to a collection of inputs and/or textareas, each with their own character limit. If any of the inputs/textareas exceed their character limit, the form's submit button will be disabled.
 
-##How to use
+## How to use
 
 Install it as a dependancy with npm:
 

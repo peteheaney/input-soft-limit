@@ -57,7 +57,7 @@ Add the necessary classes and data attributes to your HTML:
 
 | Property          | Type        | Description                                                  | Default Value       |
 | ----------------- | ----------- | ------------------------------------------------------------ | ------------------- |
-| `inputsSelector`  | String      | **Required** - the selector string that the module should use to select inputs and/or textareas. | '.input-soft-limit' |
+| `inputsSelector`  | String      | The selector string that the module should use to select inputs and/or textareas. | '.input-soft-limit' |
 | `parent`          | DOM Element | The element inside which the module will look for elements matching the `inputsSelector`. | document            |
 | `submitButton`    | String      | The selector string that the module should use to select the submit button. Omit this property if you do not want to use this feature. | null                |
 | `inputValidClass` | String      | The CSS class that will be applied to inputs and textareas that have exceeded their character limit. | 'is-invalid'        |

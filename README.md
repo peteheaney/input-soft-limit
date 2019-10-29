@@ -41,7 +41,7 @@ Add the necessary classes and data attributes to your HTML:
        id="name"
        data-input-soft-limit="10"
        data-input-soft-limit-counter=".name-count">
-       
+
 <p>Characters remaining: <span class="name-count"></span></p>
 ```
 
@@ -61,6 +61,6 @@ Add the necessary classes and data attributes to your HTML:
 | `submitButton`    | String      | The selector string that the module should use to select the submit button. Omit this property if you do not want to use this feature. | null                |
 | `inputValidClass` | String      | The CSS class that will be applied to inputs and textareas that have exceeded their character limit. | 'is-invalid'        |
 
-##Demo
+## Demo
 
 https://codesandbox.io/s/input-soft-limit-demo-wzfbq

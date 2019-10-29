@@ -6,21 +6,24 @@ class InputSoftLimit {
         // Merge default settings with passed settings
         self.settings = Object.assign({
             parent: document,
-            inputsSelector: '',
+            inputsSelector: '.input-soft-limit',
             submitButton: null,
             inputInvalidClass: 'is-invalid'
         }, settings);
-
-        self.elems = [...self.settings.parent.querySelectorAll(self.settings.inputsSelector)];
     }
 
     init() {
         let self = this;
 
+        // Get the inputs
+        let inputs = self.settings.parent.querySelectorAll(self.settings.inputsSelector);
+
         // If there are no inputs, bail out
-        if (self.elems.length === 0) {
+        if (inputs.length === 0) {
             return;
         }
+
+        self.elems = [...inputs];
 
         // Loop through the inputs
         self.elems.map(elem => {

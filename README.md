@@ -1,6 +1,8 @@
 # Input Soft Limit
 
-![npm](https://img.shields.io/npm/v/input-soft-limit) ![npm bundle size](https://img.shields.io/bundlephobia/min/input-soft-limit) ![NPM](https://img.shields.io/npm/l/input-soft-limit)
+<a href="https://www.npmjs.com/package/input-soft-limit"><img src="https://img.shields.io/npm/v/input-soft-limit.svg" alt="Version"></a>
+<a href="https://www.npmjs.com/package/input-soft-limit"><img src="https://img.shields.io/bundlephobia/min/input-soft-limit.svg" alt="Version"></a>
+<a href="https://github.com/peteheaney/input-soft-limit/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/input-soft-limit.svg" alt="License"></a>
 
 A simple JavaScript module that applies a soft character limit to inputs and textareas.
 

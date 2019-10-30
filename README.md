@@ -1,5 +1,7 @@
 # Input Soft Limit
 
+![npm](https://img.shields.io/npm/v/input-soft-limit) ![npm bundle size](https://img.shields.io/bundlephobia/min/input-soft-limit) ![NPM](https://img.shields.io/npm/l/input-soft-limit)
+
 A simple JavaScript module that applies a soft character limit to inputs and textareas.
 
 Input Soft Limit can be applied to a collection of inputs and/or textareas, each with their own character limit. If any of the inputs/textareas exceed their character limit, the form's submit button will be disabled.

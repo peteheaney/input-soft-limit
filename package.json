@@ -1,6 +1,6 @@
 {
   "name": "input-soft-limit",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "A simple JavaScript module that applies a soft character limit to inputs and textareas.",
   "main": "dist/input-soft-limit.js",
   "scripts": {

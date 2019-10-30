@@ -6,7 +6,7 @@ Input Soft Limit can be applied to a collection of inputs and/or textareas, each
 
 ## How to use
 
-Install it as a dependancy with npm:
+Install it as a dependency with npm:
 
 ```
 npm i -D input-soft-limit
